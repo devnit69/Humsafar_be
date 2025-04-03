@@ -9,7 +9,7 @@ app = FastAPI()
 
 @app.get('/')
 def root():
-    return json.dumps({'response':'working'})
+    return {'response' : 'working'}
 
 
 app.include_router(auth.router)

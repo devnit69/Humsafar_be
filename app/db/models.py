@@ -12,6 +12,7 @@ class User(Base):
     hashed_password=Column(String, nullable=False)
     full_name=Column(String),
     is_active=Column(Boolean, default=True)
+    is_verified=Column(Boolean, default=False)
     # is_premium = Column(Boolean, default=False)
 
 
